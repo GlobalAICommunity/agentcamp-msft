@@ -1,13 +1,12 @@
-name: ai-tour-26
+name: ms-ignite-26
 
 networks:
   zava-network:
     driver: bridge
-
 services:
   db:
     image: pgvector/pgvector:pg17
-    container_name: ai-tour-26-BRK441
+    container_name: ms-ignite-26-LAB512
     ports:
       - "15432:5432"
     environment:
@@ -15,7 +14,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: P@ssw0rd!
     volumes:
-      - zava_postgresql_data_tour:/var/lib/postgresql/data
+      - zava_postgresql_data_ignite:/var/lib/postgresql/data
       - ./data:/docker-entrypoint-initdb.d/backups:ro
       - ./scripts/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh:ro
     networks:
@@ -29,5 +28,5 @@ services:
       start_period: 180s
 
 volumes:
-  zava_postgresql_data_tour:
+  zava_postgresql_data_ignite:
     driver: local
