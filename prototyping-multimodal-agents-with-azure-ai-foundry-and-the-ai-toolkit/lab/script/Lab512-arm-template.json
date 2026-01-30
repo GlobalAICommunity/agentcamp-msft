@@ -1,0 +1,100 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "type": "string",
+      "metadata": {
+        "description": "Location into which all resources will be deployed."
+      },
+      "defaultValue": "swedencentral"
+    },
+    "uniqueSuffix": {
+      "type": "string",
+      "metadata": {
+        "description": "A short unique suffix to append to all resource names (no spaces, e.g. '001' or 'contoso')."
+      }
+    }
+  },
+  "variables": {
+    "accountName": "[concat('aifoundry-', parameters('uniqueSuffix'))]",
+    "projectName": "[concat('project-', parameters('uniqueSuffix'))]",
+    "gpt5DeploymentName": "[concat('gpt-5-mini-','', parameters('uniqueSuffix'))]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.CognitiveServices/accounts",
+      "apiVersion": "2025-06-01",
+      "name": "[variables('accountName')]",
+      "location": "[parameters('location')]",
+      "sku": {
+        "name": "S0"
+      },
+      "kind": "AIServices",
+      "identity": {
+        "type": "SystemAssigned"
+      },
+      "properties": {
+        "customSubDomainName": "[variables('accountName')]",
+        "networkAcls": {
+          "defaultAction": "Allow",
+          "virtualNetworkRules": [],
+          "ipRules": []
+        },
+        "allowProjectManagement": true,
+        "publicNetworkAccess": "Enabled",
+        "disableLocalAuth": false
+      }
+    },
+    {
+      "type": "Microsoft.CognitiveServices/accounts/projects",
+      "apiVersion": "2025-06-01",
+      "name": "[concat(variables('accountName'), '/', variables('projectName'))]",
+      "location": "[parameters('location')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.CognitiveServices/accounts', variables('accountName'))]"
+      ],
+      "kind": "AIServices",
+      "identity": {
+        "type": "SystemAssigned"
+      },
+      "properties": {}
+    },
+    {
+      "type": "Microsoft.CognitiveServices/accounts/deployments",
+      "apiVersion": "2025-06-01",
+      "name": "[concat(variables('accountName'), '/', variables('gpt5DeploymentName'))]",
+      "dependsOn": [
+        "[resourceId('Microsoft.CognitiveServices/accounts', variables('accountName'))]"
+      ],
+      "sku": {
+        "name": "GlobalStandard",
+        "capacity": 150
+      },
+      "properties": {
+        "model": {
+          "format": "OpenAI",
+          "name": "gpt-5-mini",
+          "version": "2025-08-07"
+        },
+        "versionUpgradeOption": "OnceNewDefaultVersionAvailable",
+        "currentCapacity": 150,
+        "raiPolicyName": "Microsoft.DefaultV2"
+      }
+    }
+  ],
+  "outputs": {
+    "accountResourceId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.CognitiveServices/accounts', variables('accountName'))]"
+    },
+    "projectResourceId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.CognitiveServices/accounts/projects', variables('accountName'), variables('projectName'))]"
+    },
+    "gpt5DeploymentResourceId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.CognitiveServices/accounts/deployments', variables('accountName'), variables('gpt5DeploymentName'))]"
+    }
+  }
+}
