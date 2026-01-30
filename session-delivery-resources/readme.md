@@ -8,8 +8,6 @@ Prior to delivering the workshop please:
 2.  Watch the video presentation
 3.  Create a new GitHub issue if you have any questions or feedback.
 
-> [!WARNING]
-> There are currently known errors when trying to run the sample in GitHub Codespaces. Therefore, it is recommended to run the sample locally.
 
 ## 📁 File Summary
 
@@ -46,7 +44,7 @@ Select the demo name to view instructions for how to deliver the demo. A full tr
 
 ## 🏋️Prepare Your Environment
 
-The demos for this breakout are designed to be run in a development container for easy setup. The container includes the following:
+The demos for this breakout are designed to be run in a GitHub Codespaces for easy setup. The container includes the following:
 - PostgresSQL dataset for Zava
 - **Customer Sales Server** that does basic product search using traditional name-based matching
 - A web app of the Cora agent app
@@ -72,16 +70,29 @@ The demos for this breakout are designed to be run in a development container fo
 
 ### Setup the Demo
 
-**Open the repository in the dev container**
+**Open the repository in the GitHub Codespaces**
 
-1. Open **Docker Desktop**.
-1. Fork and clone this repository in Visual Studio Code.
-1. When prompted by Visual Studio Code, select to "Reopen in Container". Alternatively, open the **Command Palette** (i.e. CTRL/CMD+Shift+P) and enter **Dev Containers: Reopen in Container**.
-1. Wait for the setup to complete. The dev container will build automatically with all dependencies pre-installed. This includes PostgresSQL with pgvector extension, a Python environment, and all required packages.
+The recommended approach to run this session demos is using **GitHub Codespaces** - a cloud-hosted development environment with all the necessary tools and dependencies pre-installed as per configuration files embedded in this repo. This will allow you to focus on learning and prototyping without worrying about local setup.
+
+To launch a codespace you need a **GitHub account**. If you do not have one, you can create a free account at [https://github.com/signup](https://github.com/signup).
+
+1. From the GitHub repository landing page, click on the green **Code** button and select **Create codespace on main** from the **Codespaces** tab.
+
+    ![Create Codespace](../img/create_codespace.png)
+
+> [!WARNING]
+> The codespace creation process might take a few minutes, as all the necessary dependencies and tools are being set up in the cloud environment.
+
+2. Once the codespace is created, you'll see a Visual Studio Code environment loaded in your browser.
+
+3. You might choose to continue working in the browser or click on the **Open in VS Code** button to open it in the desktop application (recommended option).
+
+    ![Open in VS Code](../img/open_in_vscode.png)
+
 
 **Confirm extensions are installed**
 
-Confirm that the dev container has installed the following extensions:
+Confirm that the codespace has installed the following extensions:
 - [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups)
 - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 - [AI Toolkit](https://aka.ms/AIToolkit)
