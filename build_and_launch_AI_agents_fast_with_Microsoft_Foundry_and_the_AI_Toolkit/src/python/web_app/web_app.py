@@ -73,7 +73,7 @@ def create_mcp_tools() -> list[ToolProtocol]:
             description="MCP server for Zava customer sales analysis",
             command="python",
             args=[
-                "src/python/mcp_server/customer_sales/customer_sales.py",
+                "build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/customer_sales/customer_sales.py",
                 "--stdio",
                 "--RLS_USER_ID=00000000-0000-0000-0000-000000000000",
             ]

@@ -154,7 +154,7 @@ Start the **zava-sales-analysis-stdio** server using the `.vscode/mcp.json` conf
             "type": "stdio",
             "command": "python",
             "args": [
-                "${workspaceFolder}/src/python/mcp_server/sales_analysis/sales_analysis.py",
+                "${workspaceFolder}/build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/sales_analysis/sales_analysis.py",
                 "--stdio",
                 "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
             ]
@@ -163,7 +163,7 @@ Start the **zava-sales-analysis-stdio** server using the `.vscode/mcp.json` conf
             "type": "stdio",
             "command": "python",
             "args": [
-                "${workspaceFolder}/src/python/mcp_server/customer_sales/customer_sales.py",
+                "${workspaceFolder}/build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/customer_sales/customer_sales.py",
                 "--stdio",
                 "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
             ]
@@ -186,7 +186,7 @@ Start the **zava-sales-analysis-stdio** server using the `.vscode/mcp.json` conf
     or from the command line, run:
 
     ```bash
-    cd src/python/mcp_server/sales_analysis
+    cd build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/sales_analysis
     python sales_analysis.py
     ```
 
@@ -201,7 +201,7 @@ Start the **zava-sales-analysis-stdio** server using the `.vscode/mcp.json` conf
                 "type": "stdio",
                 "command": "python",
                 "args": [
-                    "${workspaceFolder}/src/python/mcp_server/sales_analysis/sales_analysis.py",
+                    "${workspaceFolder}/build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/sales_analysis/sales_analysis.py",
                     "--stdio",
                     "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
                 ]
@@ -210,7 +210,7 @@ Start the **zava-sales-analysis-stdio** server using the `.vscode/mcp.json` conf
                 "type": "stdio",
                 "command": "python",
                 "args": [
-                    "${workspaceFolder}/src/python/mcp_server/customer_sales/customer_sales.py",
+                    "${workspaceFolder}/build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/customer_sales/customer_sales.py",
                     "--stdio",
                     "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
                 ]
