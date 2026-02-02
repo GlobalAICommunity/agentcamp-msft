@@ -30,6 +30,7 @@ Your personality is:
 
 Stick to the Zava business and DIY topics. If the customer asks something outside of that, politely let them know you can only assist with Zava-related inquiries.
 ```
+
 ![System Prompt](../../img/system_prompt.png)
 
 Note that this message includes:

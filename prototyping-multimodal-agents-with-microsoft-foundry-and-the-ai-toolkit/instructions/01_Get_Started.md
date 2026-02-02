@@ -42,7 +42,6 @@ In this workshop, we will be using **GitHub Codespaces** to launch a cloud-hoste
 > The codespace creation process might take a few minutes, as all the necessary dependencies and tools are being set up in the cloud environment.
 
 5. Once the codespace is created, you'll see a Visual Studio Code environment loaded in your browser.
-![Codespace layout](../../img/codespace_layout.png)
 
 6. You might choose to continue working in the browser or click on the **Open in VS Code** button to open it in the desktop application (recommended option).
 
@@ -56,8 +55,6 @@ In this workshop, we will be using **GitHub Codespaces** to launch a cloud-hoste
 ![Confirm opening VS Code App](../../img/confirm_opening_vscode.png)
 
 8. Once VS Code Desktop is opened, you'll be asked to allow access to the codespace. Click **Open** to proceed.
-
-![Open Codespaces in VS Code Desktop](../../img/open_codespaces_vscode.png)
 
 9. Next, you'll be asked to sign in to GitHub from VS Code. By clicking **Allow**, a browser window will open to complete the sign-in process. Click **Continue** to proceed with the GitHub account you used to create the Codespace. And then click on **Authorize Visual Studio Code** to complete the sign-in process.
 
