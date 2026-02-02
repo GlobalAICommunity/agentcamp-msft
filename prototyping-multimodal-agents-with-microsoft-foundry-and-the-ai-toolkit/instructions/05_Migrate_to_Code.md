@@ -66,12 +66,20 @@ For example, if you selected the **Microsoft Agent Framework** SDK with **Python
    ```
 4. Open a terminal in Visual Studio Code by selecting **Terminal** -> **New Terminal** from the top menu.
 
-5. Navigate to the directory where the code file is saved:
+5. Authenticate to Azure:
+
+```
+az login
+```
+
+You'll be prompted to open a browser window and fill in a code to complete the authentication. Once back in the terminal, press **Enter** to confirm the Azure subscription selection.
+
+6. Navigate to the directory where the code file is saved:
 
 ```
 cd src/python
 ```
-6. Run the script using:
+7. Run the script using:
 
 ```
 python cora-app.py
