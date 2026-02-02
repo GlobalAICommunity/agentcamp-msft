@@ -131,13 +131,13 @@ store_id |      store_name      |              rls_user_id              | is_onl
 
 ### Option 1: Full RLS Test
 ```bash
-cd /workspace/src/shared/data/database
+cd /workspace/data/database
 python test_rls_with_store_manager.py
 ```
 
 ### Option 2: Simple Connection Test
 ```bash
-cd /workspace/src/shared/data/database
+cd /workspace/data/database
 python connect_as_store_manager.py
 ```
 

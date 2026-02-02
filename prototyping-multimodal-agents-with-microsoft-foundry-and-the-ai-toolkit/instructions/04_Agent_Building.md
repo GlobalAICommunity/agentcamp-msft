@@ -16,7 +16,7 @@ Agent Builder's UI is organized into two sections. The left side of Agent Builde
 
 ## Step 2: Create the Agent
 
-Let's create Zava's Cora agent! In **Agent Builder** select **+ New Agent**. Within the **Agent name** field, enter **Cora**. For the agent's **Model**, select the **gpt-4-mini (via Azure AI Foundry)** model.
+Let's create Zava's Cora agent! In **Agent Builder** select **+ New Agent**. Within the **Agent name** field, enter **Cora**. For the agent's **Model**, select the **gpt-4-mini (via Microsoft Foundry)** model.
 
 ![Agent Basic Information](../../img/agent-basic-information.png)
 

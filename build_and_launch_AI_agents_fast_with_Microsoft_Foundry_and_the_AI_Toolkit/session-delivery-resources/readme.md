@@ -102,25 +102,6 @@ If any extension is missing, install before moving forward.
 > [!NOTE]
 > The [Microsoft Foundry](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.vscode-ai-foundry) extension is installed as a bundle with the [AI Toolkit](https://aka.ms/AIToolkit). The [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups) extension is installed as a bundle with the [Microsoft Foundry](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.vscode-ai-foundry) extension.
 
-**Deploy Azure Resources to your Azure subscription**
-
-To execute this session demos you will need to create a Microsoft Foundry project with the **gpt-4.1-mini** model deployed.
-You can use the following button to deploy the required resources:[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FGlobalAICommunity%2Fagentcamp-msft%2Frefs%2Fheads%2Fmain%2Finfra%2Farm_template.json).
-
-> [!IMPORTANT]
-> Microsoft Foundry requires an Azure subscription. A **free trial** provides $200 credit for 30 days. Some features may incur costs after the trial. Check the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate costs.
-
-> [!WARNING]
-> **Free Tier Limitations:** The Azure free subscription has significant constraints that may prevent full implementation of this challenge:
-> - **Model access:** Some advanced models (e.g., GPT-5, Claude) may not be available or have very limited quotas
-> - **Rate limits:** Strict API call limits (e.g., requests per minute, tokens per day)
-> - **Region restrictions:** Free tier resources may only be available in limited regions
-> - **Feature restrictions:** Some Microsoft Foundry features (agent orchestration, evaluations) may require pay-as-you-go
-> - **Credit exhaustion:** $200 credit can be consumed quickly with heavy AI model usage
-
-> [!NOTE]
-> If you are delivering this session in the context of the [AgentCamp 2026](https://globalai.community/agentcamp) series of events held by the Global AI Community, you might be eligible to redeem a time-limited sponsored Azure subscription. Pls refer to your local Global AI Chapter leads for more details.
-
 **Sign-in to the Azure Resources extension and set your default project.**
 
 1. In the **Azure Resources** extension, select **Sign in to Azure**.

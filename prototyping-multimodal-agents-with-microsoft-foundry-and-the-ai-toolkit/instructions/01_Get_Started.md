@@ -7,7 +7,7 @@
 
 In this workshop, we will be using **GitHub Codespaces** to launch a cloud-hosted development environment with all the necessary tools and dependencies pre-installed. This will allow you to focus on learning and prototyping without worrying about local setup.
 
-1. Navigate to the [GitHub repo](https://github.com/GlobalAICommunity/agentcamp-msft) hosting the lab code and resources.
+1. Navigate to this GitHub repository landing page.
 
     > [!TIP]
     > Click the Star button in the top right corner, this will help you easily find it later.

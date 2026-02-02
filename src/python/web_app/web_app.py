@@ -15,12 +15,12 @@ from contextlib import AsyncExitStack
 import uuid
 from pathlib import Path
 
-# Resolve shared asset paths relative to this file (web_app.py)
+# Resolve frontend asset paths relative to this file (web_app.py)
 BASE_SRC_DIR = Path(__file__).resolve().parents[2]  # -> /workspace/src
-SHARED_STATIC_DIR = BASE_SRC_DIR / "shared" / "static"
+FRONTEND_STATIC_DIR = BASE_SRC_DIR / "frontend" / "static"
 
-# Use shared/static when present; fall back to project-root static/templates
-STATIC_DIR = SHARED_STATIC_DIR if SHARED_STATIC_DIR.exists() else Path("static")
+# Use frontend/static when present; fall back to project-root static/templates
+STATIC_DIR = FRONTEND_STATIC_DIR if FRONTEND_STATIC_DIR.exists() else Path("static")
 TEMPLATES_DIR = STATIC_DIR if STATIC_DIR.exists() else Path("templates")
 
 # Agent Framework imports
