@@ -29,11 +29,9 @@ An interactive, self-paced lab experience for participants to build their own mu
 
 **What's Included:**
 
-- 🚀 Complete lab instructions with screenshots
-- 📊 Presentation slides with speaker notes for a 10 mins intro
+- 🚀 Complete step-by-step lab manual with screenshots
 
 **Getting Started:** Start with the [introduction](prototyping-multimodal-agents-with-microsoft-foundry-and-the-ai-toolkit/instructions/00_Introduction.md) and follow the numbered modules.
-
 ---
 
 ## 🛠️ Technologies Covered
@@ -65,6 +63,41 @@ An interactive, self-paced lab experience for participants to build their own mu
 └── prototyping-multimodal-agents-with-microsoft-foundry-and-the-ai-toolkit/
     └── instructions/                                  # Workshop lab materials
 ```
+
+## 💻 Shared Codebase
+
+The repository includes a complete implementation of the **Zava Retail** scenario used across both sessions:
+
+### Web Application (`src/python/web_app/`)
+
+A chat-like web application that demonstrates how to interface with the **Cora agent**, an AI assistant that helps Zava customers discover products through natural conversation. The webapp showcases:
+
+- Real-time chat interface with the agent
+- Integration with Microsoft Foundry models
+- MCP tool integration for product search
+- Multi-modal interactions (text and images)
+
+You can use it in your delivery to demonstrate the final agent experience you are aiming to build.
+
+### Database (`data/database/`)
+
+PostgreSQL database with pgvector extension hosting the **Zava Products Catalog**:
+
+- 100+ product records with descriptions, pricing, and categories
+- Vector embeddings for semantic product search
+- Row-level security (RLS) configuration for multi-tenant scenarios
+- Sample data and backup files for quick setup
+
+### MCP Server (`src/python/mcp_server/customer_sales/`)
+
+A Model Context Protocol (MCP) server implementation that exposes tools for:
+
+- **Semantic product search** - Natural language queries across the product catalog
+- **Product filtering** - Filter by category, price range, and attributes
+- **Product details** - Retrieve comprehensive product information
+- **Recommendations** - Context-aware product suggestions
+
+This MCP server enables the Cora agent to access and search the product database in real-time, demonstrating how agents can be augmented with external data sources and tools. Thanks to the MCP standard, the agentic applications doesn't need to worry about the underlying implementation of the search tools or the data structure, focusing instead on generating useful responses based on the retrieved information.
 
 ## 🚀 Quick Start
 
