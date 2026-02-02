@@ -1,8 +1,10 @@
+agent-framework-core==1.0.0b260107,
+agent-framework-azure-ai==1.0.0b260107
 aiohttp>=3.12.13,<4.0.0
 asyncpg>=0.30.0,<0.31.0
-azure-ai-agents==1.1.0b4
-azure-ai-projects==1.0.0b12
-azure-identity>=1.23.0,<2.0.0
+azure-ai-agents
+azure-ai-projects
+azure-identity
 fastapi
 httpx>=0.28.1,<0.29.0
 mcp>=1.10.0,<2.0.0

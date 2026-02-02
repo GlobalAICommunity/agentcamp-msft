@@ -36,11 +36,11 @@ Select the demo name to view instructions for how to deliver the demo. A full tr
 
 | Demo        | Description | Video 
 --------------|-------------|-------------
-[Explore and Compare Models](/01-session-delivery-resources/demos-instructions/explore-compare-models.md)   | Use **GitHub Copilot Agent Mode** to get model recommendations. Browse the **Model Catalog** in the AI Toolkit and compare 2 models within the **Model Playground**. | [Demo video](https://aka.ms/AAxqj4z)
-[Create Agents with Agent Builder](/02-session-delivery-resources/demos-instructions/create-agents.md)   | Create the Cora agent in the **Agent Builder** and define it's system prompt. |  [Demo video](https://aka.ms/AAxq4rm)
-[Add Tools to an Agent in Agent Builder](/03-session-delivery-resources/demos-instructions/add-tools.md)   | Connect the Cora agent to the **Zava MCP server** and add the **get_products_by_name** tool. | [Demo video](https://aka.ms/AAxqc9k)
-[Evaluate Agent Responses](/04-session-delivery-resources/demos-instructions/evaluate-agent-responses.md)   |  Use **GitHub Copilot Agent Mode** to get evalator recommendations. Run both **manual** and **AI-assisted** evaluations for the agent output. | [Demo video](https://aka.ms/AAxqc9h)
-[Export Agent Code](/05-session-delivery-resources/demos-instructions/export-agent-code.md)   | Export the code from the **Agent Builder** for the Cora agent. Chat with the Cora agent live via the ageng UI. | [Demo video](https://aka.ms/AAxq4rl)
+[Explore and Compare Models](./demos-instructions/01-explore-compare-models.md)   | Use **GitHub Copilot Agent Mode** to get model recommendations. Browse the **Model Catalog** in the AI Toolkit and compare 2 models within the **Model Playground**. | [Demo video](https://aka.ms/AAxqj4z)
+[Create Agents with Agent Builder](./demos-instructions/02-create-agents.md)   | Create the Cora agent in the **Agent Builder** and define its system prompt. |  [Demo video](https://aka.ms/AAxq4rm)
+[Add Tools to an Agent in Agent Builder](./demos-instructions/03-add-tools.md)   | Connect the Cora agent to the **Zava MCP server** and add the **get_products_by_name** tool. | [Demo video](https://aka.ms/AAxqc9k)
+[Evaluate Agent Responses](./demos-instructions/04-evaluate-agent-responses.md)   |  Use **GitHub Copilot Agent Mode** to get evalator recommendations. Run both **manual** and **AI-assisted** evaluations for the agent output. | [Demo video](https://aka.ms/AAxqc9h)
+[Export Agent Code](./demos-instructions/05-export-agent-code.md)   | Export the code from the **Agent Builder** for the Cora agent. Chat with the Cora agent live via the ageng UI. | [Demo video](https://aka.ms/AAxq4rl)
 
 ## 🏋️Prepare Your Environment
 
@@ -56,7 +56,7 @@ The demos for this breakout are designed to be run in a GitHub Codespaces for ea
 - [Azure](https://signup.azure.com/) subscription
 - [GitHub](https://www.github.com) with a [GitHub Copilot](https://github.com/github-copilot/signup) subscription
 
-#### Development Environment
+#### Development Environment (for local setup)
 
 - [Python 3.10](https://www.python.org/downloads/) (or higher)
 - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=winget) - Used for Azure authentication and resource management
@@ -78,7 +78,7 @@ To launch a codespace you need a **GitHub account**. If you do not have one, you
 
 1. From the GitHub repository landing page, click on the green **Code** button and select **Create codespace on main** from the **Codespaces** tab.
 
-    ![Create Codespace](../img/create_codespace.png)
+    ![Create Codespace](../../img/create_codespace.png)
 
 > [!WARNING]
 > The codespace creation process might take a few minutes, as all the necessary dependencies and tools are being set up in the cloud environment.
@@ -87,7 +87,7 @@ To launch a codespace you need a **GitHub account**. If you do not have one, you
 
 3. You might choose to continue working in the browser or click on the **Open in VS Code** button to open it in the desktop application (recommended option).
 
-    ![Open in VS Code](../img/open_in_vscode.png)
+    ![Open in VS Code](../../img/open_in_vscode.png)
 
 
 **Confirm extensions are installed**
@@ -100,7 +100,26 @@ Confirm that the codespace has installed the following extensions:
 If any extension is missing, install before moving forward.
 
 > [!NOTE]
-> The [Microsoft Foundry](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.vscode-ai-foundry) extension is installed as a bundle with the [AI Toolkit](https://aka.ms/AIToolkit). The [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups) extension is installed as a bundle with the [Microsoft Foundry](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.vscode-ai-foundry) extension.*
+> The [Microsoft Foundry](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.vscode-ai-foundry) extension is installed as a bundle with the [AI Toolkit](https://aka.ms/AIToolkit). The [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups) extension is installed as a bundle with the [Microsoft Foundry](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.vscode-ai-foundry) extension.
+
+**Deploy Azure Resources to your Azure subscription**
+
+To execute this session demos you will need to create a Microsoft Foundry project with the **gpt-4.1-mini** model deployed.
+You can use the following button to deploy the required resources:[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FGlobalAICommunity%2Fagentcamp-msft%2Frefs%2Fheads%2Fmain%2Fbuild_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit%2Finfra%2Farm_template.json).
+
+> [!IMPORTANT]
+> Microsoft Foundry requires an Azure subscription. A **free trial** provides $200 credit for 30 days. Some features may incur costs after the trial. Check the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate costs.
+
+> [!WARNING]
+> **Free Tier Limitations:** The Azure free subscription has significant constraints that may prevent full implementation of this challenge:
+> - **Model access:** Some advanced models (e.g., GPT-5, Claude) may not be available or have very limited quotas
+> - **Rate limits:** Strict API call limits (e.g., requests per minute, tokens per day)
+> - **Region restrictions:** Free tier resources may only be available in limited regions
+> - **Feature restrictions:** Some Microsoft Foundry features (agent orchestration, evaluations) may require pay-as-you-go
+> - **Credit exhaustion:** $200 credit can be consumed quickly with heavy AI model usage
+
+> [!NOTE]
+> If you are delivering this session in the context of the [AgentCamp 2026](https://globalai.community/agentcamp) series of events held by the Global AI Community, you might be eligible to redeem a time-limited sponsored Azure subscription. Pls refer to your local Global AI Chapter leads for more details.
 
 **Sign-in to the Azure Resources extension and set your default project.**
 
@@ -137,69 +156,7 @@ If any extension is missing, install before moving forward.
 1. In the browser, navigate to [https://localhost:8000](http://localhost:8000).
 1. Confirm that the green **Connected** label displays in the top-right of the UI.
 
-**Create 4 iterations of the Cora agent within the AI Toolkit**
+**Tips for running demos on stage**
 
-Although you can create the agent live during the demo, it's recommend to already have saved verisons of the Cora agent prepared to mitigate latency or errors with setup.
-
-**V1 Agent - Basic**
-
-1. In the AI Toolkit, navigate to the **Agent Builder**.
-1. Create a new agent named **Cora**.
-1. For the **Model** field, select **gpt-4.1-mini (Remote via Microsoft Foundry)**.
-1. For the **Instructions** field, enter the following:
-
-  ```
-  You are Cora, an intelligent and friendly AI assistant for Zava, a home improvement brand. You help customers with their DIY projects by understanding their needs and recommending the most suitable products from Zava’s catalog.​
-  
-  Your role is to:​
-  
-  - Engage with the customer in natural conversation to understand their DIY goals.​
-  - Ask thoughtful questions to gather relevant project details.
-  - Be brief in your responses.​
-  - Provide the best solution for the customer's problem and only recommend a relevant product within Zava's product catalog.​
-  - Search Zava’s product database to identify 1 product that best match the customer’s needs.​
-  - Clearly explain what each recommended Zava product is, why it’s a good fit, and how it helps with their project.​
-  ​
-  Your personality is:​
-  
-  - Warm and welcoming, like a helpful store associate​
-  - Professional and knowledgeable, like a seasoned DIY expert​
-  - Curious and conversational—never assume, always clarify​
-  - Transparent and honest—if something isn’t available, offer support anyway​
-  
-  If no matching products are found in Zava’s catalog, say:​
-  “Thanks for sharing those details! I’ve searched our catalog, but it looks like we don’t currently have a product that fits your exact needs. If you'd like, I can suggest some alternatives or help you adjust your project requirements to see if something similar might work.”​
-  ```
-1. Scroll to the bottom of the Agent Builder and select **Save Version**. Name the version **v1-basic-agent**.
-
-**V2 Agent - Tools**
-
-1. From the **v1-basic-agent**, clear the chat window.
-2. Scroll to the bottom of the Agent Builder and select **Save Version**. Name the version **v2-tools-agent**. 
-
-**V3 Agent - Manual Evaluation**
-
-1. From the **v2-tools-agent** agent, switch to the **Evaluation** tab.
-1. Select **+ Add an Empty Row** 4 times.
-1. Enter the following for the **User Query** values for each row of data:
-    - What type of organic compost does Zava have?
-    - Does Zava have a paint bucket? If so, how much is it?
-    - What color glitter does Zava sell?
-    - How much tape measure is currently in stock?
-1. Select all rows and click **Run Response** (i.e. the play button icon).
-1. Confirm that the agent has provided a response for each row.
-1. Scroll down to the bottom of the Agent Builder and select **Save Version**. Name the version **v3-manual-evaluation**.
-
-**V4 Agent - Automated Evaluation**
-
->[!Note]
-> Running automated evaluations can take a significant amount of time. It is recommended to run this evaluation in advanced.
-
->[!Note]
-> For your initial run of AI-assisted evaluations, the AI Toolkit extension will download and install the required dependencies. If the Cora agent web app is actively running, temporarily stop the agent as the port it's using will interfere with the evaluation dependency download. After your initial successful run of AI-assisted evaluations, you can subsequently have both the Cora app running as well as execute AI-assisted evaluations given that the required dependencies will have already been downloaded and installed in the container.
-
-1. From the **v3-manual-evaluation** agent, create a new evaluation via the **Add Evaluation** button.
-1. Select the following evaluators: `relevance`, `coherence`.
-1. Select the **gpt-4.1-mini**  model.
-1. Select **Run Evaluation** > **Run Evaluation Only**.
-1. Scroll down to the bottom of the Agent Builder and select **Save Version**. Name the version **v4-automated-evaluation**.
+This session includes multiple demos and walking through each steps live might be time consuming. Consider using the 'Save version' functionality of the AI Toolkit to save different versions of your agent and quickly switch between them during the demo.
+You can find the 'Save version' button by scrolling to the bottom of the left pane in the Agent Builder.

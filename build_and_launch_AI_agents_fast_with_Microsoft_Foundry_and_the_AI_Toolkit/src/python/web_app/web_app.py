@@ -26,7 +26,7 @@ TEMPLATES_DIR = STATIC_DIR if STATIC_DIR.exists() else Path("templates")
 # Agent Framework imports
 from agent_framework import ChatAgent, MCPStdioTool, ToolProtocol, ChatMessage, TextContent, DataContent
 from agent_framework.azure import AzureAIClient
-from azure.identity.aio import AzureCliCredential
+from azure.identity.aio import DefaultAzureCredential
 
 
 from dotenv import load_dotenv
@@ -119,15 +119,16 @@ async def initialize_agent():
     global agent_instance, credential_instance
     if agent_instance is None:
         try:
-            # Use AzureCliCredential like cora-agent-demo.py
-            credential_instance = AzureCliCredential()
+            # Use DefaultAzureCredential for better authentication flexibility
+            credential_instance = DefaultAzureCredential()
             
-            # Create AzureAIClient for Foundry project endpoint
+            # Create agent with the updated AzureAIClient API
+            # Note: The agent is created using async context manager pattern in the new API
+            # For this web app, we'll create a persistent agent instance
             client = AzureAIClient(
                 project_endpoint=ENDPOINT,
                 model_deployment_name=MODEL_DEPLOYMENT_NAME,
-                async_credential=credential_instance,
-                agent_name=AGENT_NAME,
+                credential=credential_instance,
             )
             
             # Create agent with the Azure AI client

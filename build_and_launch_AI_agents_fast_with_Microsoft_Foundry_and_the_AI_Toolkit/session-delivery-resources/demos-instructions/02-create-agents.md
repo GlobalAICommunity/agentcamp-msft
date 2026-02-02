@@ -4,15 +4,6 @@ Create the Cora agent in the **Agent Builder** and define it's system prompt.
 
 ## Instructions
 
-**If you've already created a `v1-basic-agent`:**
-
-1. Select the agent from within **My Resources > Agents > v1-basic-agent**. This action opens the agent in the **Agent Builder**.
-1. Confirm that the **gpt-4.1-mini** model is selected.
-1. Provide a high-level overview of what was completed thus far to familiarize the audience with the **Agent Builder**.
-1. Proceed to **Chat with Cora**.
-
-**If you did not create a `v1-basic-agent`:**
-
 1. Open up the **Agent Builder** select **+ New Agent**.
 1. Name the agent **Cora**.
 1. For the model, select **gpt-4.1-mini (Remote via Microsoft Foundry)**.

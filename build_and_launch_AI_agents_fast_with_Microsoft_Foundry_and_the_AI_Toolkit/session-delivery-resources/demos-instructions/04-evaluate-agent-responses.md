@@ -4,14 +4,7 @@ Use **GitHub Copilot Agent Mode** to get evalator recommendations. Run both **ma
 
 ## Instructions
 
-**If you've already created a `v3-manual-evaluation`:**
-
-1. Select the agent from within **My Resources > Agents > v3-manual-evaluation**. This action opens the agent in the **Agent Builder**.
-1. Confirm that the **gpt-4.1-mini** model is selected.
-1. Switch to the **Evaluation** tab.
-1. Proceed to **Manual Evaluation**.
-
-**If you did not create a `v3-manual-evaluation`:**
+**Manual Evaluation**
 
 1. In the **Agent Builder**, confirm that the **Cora** agent is still selected. If not, select the **Cora** agent from within **My Resources > Agents > Cora**. This action opens the agent in the **Agent Builder**/
 1. Confirm that the **gpt-4.1-mini** model is selected.
@@ -25,19 +18,9 @@ Use **GitHub Copilot Agent Mode** to get evalator recommendations. Run both **ma
 1. Select all rows and click **Run Response** (i.e. the play button icon).
 1. Confirm that the agent has provided a response for each row.
 1. Proceed to **Manual Evaluation**
+1. Review the responses for each row and select **thumbs up** or **thumbs down**.
 
-**Manual Evaluation**
-
-Review the responses for each row and select **thumbs up** or **thumbs down**.
-
-**If you've already created a `v4-automated-evaluation`:**
-
-1. Select the agent from within **My Resources > Agents > v4-automated-evaluation**. This action opens the agent in the **Agent Builder**.
-1. Confirm that the **gpt-4.1-mini** model is selected.
-1. Switch to the **Evaluation** tab.
-1. Proceed to **AI-Assisted Evaluation**.
-
-**If you did not create a `v4-automated-evaluation`:**
+**Automated Evaluation**
 
 >[!Note]
 > Running automated evaluations can take a significant amount of time. It is recommended to run this evaluation in advanced.
@@ -49,9 +32,6 @@ Review the responses for each row and select **thumbs up** or **thumbs down**.
 1. Select the following evaluators: `relevance`, `coherence`.
 1. Select the **gpt-4.1-mini**  model.
 1. Select **Run Evaluation** > **Run Evaluation Only**.
-
-**AI-Assisted Evalution**
-
 1. For a better view of the results, select **Expand to Full Screen**.
 1. Review the output from the agent. 
 

@@ -6,14 +6,6 @@ Create the Cora agent in the **Agent Builder** and define it's system prompt.
 
 ## Instructions
 
-**If you've already created a `v2-tools-agent`:**
-
-1. Select the agent from within **My Resources > Agents > v2-tools-agent**. This action opens the agent in the **Agent Builder**.
-1. Confirm that the **gpt-4.1-mini** model is selected.
-1. Proceed to **Add tool**.
-
-**If you did not create a `v2-tools-agent`:**
-
 1. In the **Agent Builder**, confirm that the **Cora** agent is still selected. If not, select the **Cora** agent from within **My Resources > Agents > Cora**. This action opens the agent in the **Agent Builder**/
 1. Confirm that the **gpt-4.1-mini** model is selected.
 1. Proceed to **Add tool**
