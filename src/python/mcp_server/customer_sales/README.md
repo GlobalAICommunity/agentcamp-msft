@@ -284,13 +284,13 @@ Both servers support HTTP mode for streamable responses:
 
 #### Basic Server
 ```bash
-cd build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/customer_sales/ 
+cd src/python/mcp_server/customer_sales/ 
 python customer_sales.py
 ```
 
 #### Semantic Search Server
 ```bash
-cd build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/customer_sales/ 
+cd src/python/mcp_server/customer_sales/ 
 python customer_sales_semantic_search.py
 ```
 
@@ -303,7 +303,7 @@ python customer_sales_semantic_search.py
             "type": "stdio",
             "command": "python",
             "args": [
-                "${workspaceFolder}/build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/sales_analysis/sales_analysis.py",
+                "${workspaceFolder}/src/python/mcp_server/sales_analysis/sales_analysis.py",
                 "--stdio",
                 "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
             ]
@@ -312,7 +312,7 @@ python customer_sales_semantic_search.py
             "type": "stdio",
             "command": "python",
             "args": [
-                "${workspaceFolder}/build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/customer_sales/customer_sales.py",
+                "${workspaceFolder}/src/python/mcp_server/customer_sales/customer_sales.py",
                 "--stdio",
                 "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
             ]
@@ -321,7 +321,7 @@ python customer_sales_semantic_search.py
             "type": "stdio",
             "command": "python",
             "args": [
-                "${workspaceFolder}/build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/mcp_server/customer_sales/customer_sales_semantic_search.py",
+                "${workspaceFolder}/src/python/mcp_server/customer_sales/customer_sales_semantic_search.py",
                 "--stdio",
                 "--RLS_USER_ID=00000000-0000-0000-0000-000000000000"
             ]

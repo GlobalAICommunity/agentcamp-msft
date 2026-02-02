@@ -152,7 +152,7 @@ You can use the following button to deploy the required resources:[![Deploy to A
 
 **Start the Cora web app**
 
-1. In the terminal, run the command `python build_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit/src/python/web_app/web_app.py`.
+1. In the terminal, run the command `python src/python/web_app/web_app.py`.
 1. In the browser, navigate to [https://localhost:8000](http://localhost:8000).
 1. Confirm that the green **Connected** label displays in the top-right of the UI.
 
