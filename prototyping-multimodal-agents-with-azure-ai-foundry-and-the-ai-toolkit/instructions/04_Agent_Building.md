@@ -16,7 +16,7 @@ Agent Builder's UI is organized into two sections. The left side of Agent Builde
 
 ## Step 2: Create the Agent
 
-Let's create Zava's Cora agent! In **Agent Builder** select **+ New Agent**. Within the **Agent name** field, enter **Cora**. For the agent's **Model**, select the **gpt-5-mini (via Azure AI Foundry)** model.
+Let's create Zava's Cora agent! In **Agent Builder** select **+ New Agent**. Within the **Agent name** field, enter **Cora**. For the agent's **Model**, select the **gpt-4-mini (via Azure AI Foundry)** model.
 
 ![Agent Basic Information](../../img/agent-basic-information.png)
 
@@ -155,5 +155,3 @@ What are the current inventory levels for Zava's eggshell paint?
 - Crafting specific instructions shapes the agent's personality, conversational style, and response patterns for consistent interactions.
 - Model Context Protocol (MCP) servers offer a standardized framework for connecting AI agents to external tools and data sources more effectively than static file attachments.
 - Integrating MCP tools allows agents to retrieve current inventory levels, pricing, and product information dynamically rather than relying on outdated static data.
-
-Click **Next** to proceed to the following section of the lab.

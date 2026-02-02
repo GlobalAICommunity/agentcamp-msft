@@ -99,6 +99,4 @@ Of course this approach has its limitations, as the model can only process a lim
 - Crafting an effective system message is crucial for guiding the model's behavior and ensuring relevant responses.
 - Providing context data through file attachments can significantly enhance the model's performance and relevance.
 - Testing the model with multimodal input helps validate the effectiveness of the system message and context data.
-- Grounding data should be relevant and concise to fit within the model's input limitations.        
-
-Click **Next** to proceed to the following section of the lab.
+- Grounding data should be relevant and concise to fit within the model's input limitations.

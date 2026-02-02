@@ -10,11 +10,6 @@ By the end of this workshop, you should be able to:
 - Augment models with prompts and data to get more accurate and grounded responses in the AITK Playground.
 - Prototype an agent by combining models and instructions with tools via MCP (Model Context Protocol) using the AITK Agent Builder.
 
-## Resources
-
-> [!TIP]
-> You can find login and subscription information over on the Resources tab.
-
 ## Lab Outline
 
 The lab is organized into 4 sections, taking you through the process of prototyping a multimodal agent with Microsoft Foundry and the AI Toolkit.
@@ -63,5 +58,3 @@ This agent will help Zava:
 - **Support omnichannel strategy** by seamlessly connecting online and in-store experiences
 
 Throughout this workshop, you'll use the AI Toolkit and Microsoft Foundry to build, test, and refine Cora's capabilities, learning how to create AI agents for real business scenarios.
-
-Click **Next** to set up your Workshop environment and get started.

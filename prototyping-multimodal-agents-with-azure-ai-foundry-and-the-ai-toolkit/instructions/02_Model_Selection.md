@@ -47,8 +47,8 @@ After applying filters, you'll see a refined list of models.
 
 For this exercise:
 
-1. Locate the **OpenAI GPT-5-mini** and **Mistral Small 3.1** models in the filtered results.
-   - **OpenAI GPT-5-mini** is a full-featured multimodal model with comprehensive capabilities
+1. Locate the **OpenAI GPT-4-mini** and **Mistral Small 3.1** models in the filtered results.
+   - **OpenAI GPT-4-mini** is a full-featured multimodal model with comprehensive capabilities
    - **Mistral Small 3.1** is an optimized smaller model with faster response times and lower costs.
    
 > [!TIP]
@@ -77,7 +77,7 @@ For this exercise:
 >
 > ![Model collection](../../img/model_collection.png)
 >
-> If you don't see them, it's likely because the view hasn't refreshed yet. Proceed to the next step, and the models should appear in the Playground.
+> If you don't see them, click on the refresh icon to update the view.
 
 3. In the **Model** field, you'll see the name of the model you just selected, for example **Mistral Small 3.1 (via GitHub)**. 
 
@@ -87,10 +87,8 @@ For this exercise:
 > You might experience some delay in model loading, especially if it's your first time accessing the Playground. Please be patient while the model initializes.
 
 4. Next, click the **Compare** button to enable side-by-side comparison
-5. From the dropdown, select your second model (OpenAI GPT-5-mini if Mistral Small 3.1 is already selected)
+5. From the dropdown, select your second model (OpenAI GPT-4-mini if Mistral Small 3.1 is already selected)
 6. You now have two models ready for comparison testing
-
-![Model Comparison](../../img/model_comparison.png)
 
 ## Step 4: Test Text Generation and Multimodal Capabilities
 
@@ -152,18 +150,14 @@ Review the outputs from both models, using several factors to guide your evaluat
 
 ## Step 6: Import selected model from Microsoft Foundry
 
-Once we are done with the comparison, we are going to select one of the two models for further prototyping in the next lab sections. For the sake of this exercise, let's go with **GPT-5-mini**. 
+Once we are done with the comparison, we are going to select one of the two models for further prototyping in the next lab sections. For the sake of this exercise, let's go with **GPT-4-mini**.
 
 > [!TIP]
 > To come back to the standard Playground (with a single pane and a single model),you can click on **Select this model** on the right side of the model name.
->
-> ![Select this model](../../img/select_this_model.png)
 
 Now, since in the next section we are going to augment the model with additional context data relative to Zava, our DIY retail company, we need to switch to a model hosted in Microsoft Foundry, which provides enterprise-grade security and compliance features.
 
-Go back to **Model Playground** and expand the **Model** dropdown and select the gpt-5-mini instance hosted in Microsoft Foundry, that has been pre-deployed for this workshop, in the project you logged into in the [previous lab section](./01_Get_Started.md).
-
-![Select Azure Model](../../img/select_azure_model.png)
+Go back to **Model Playground** and expand the **Model** dropdown and select the gpt-4-mini instance hosted in Microsoft Foundry, that you pre-deployed for this workshop.
 
 > [!NOTE]
 > While GitHub models are excellent for prototyping, Microsoft Foundry hosted models provide the enterprise features needed for production deployments, including enterprise-grade security and compliance, Service Level Agreements (SLAs), enhanced performance and scalability, and integration with other Azure services.
@@ -177,4 +171,3 @@ Go back to **Model Playground** and expand the **Model** dropdown and select the
 - Multimodal capabilities can be tested effectively using the built-in comparison tools
 
 This exploration process ensures you select the most appropriate model for your specific use case, balancing factors like performance, cost, features, and deployment requirements.
-Click **Next** to proceed to the following section of the lab.

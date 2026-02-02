@@ -21,7 +21,7 @@ To access GitHub Copilot Chat, select the **Toggle Chat** icon at the top of the
 ![Toggle chat button.](../../img/toggle-chat.png)
 
 > [!NOTE]
-> If asked to log in at your first interaction with Copilot, select **Sign-in** -> **Continue with GitHub**. Then click on **Continue** to proceed with the GitHub Enterprise account you used to access the GitHub hosted models, when redirected to the GitHub sign-in page.
+> If asked to log in at your first interaction with Copilot, select **Sign-in** -> **Continue with GitHub**. Then click on **Continue** to proceed with the GitHub account you used to access the GitHub hosted models, when redirected to the GitHub sign-in page.
 
 Save the generated code file to your workspace as 'src/python/cora-app.py'. Be sure to have the file active so that GitHub Copilot Chat can use the file as context. Alternatively, you could reference the specific file itself in your prompt to GitHub Copilot Chat.
 
@@ -65,25 +65,13 @@ For example, if you selected the **Microsoft Agent Framework** SDK with **Python
             ]
    ```
 4. Open a terminal in Visual Studio Code by selecting **Terminal** -> **New Terminal** from the top menu.
-5. Install the required dependencies by using:
 
-```
-pip install agent-framework --pre
-```
-6. Authenticate to Azure:
-
-```
-az login
-```
-
-You'll be prompted to open a browser window and fill in a code to complete the authentication. Once back in the terminal, press **Enter** to confirm the Azure subscription selection.
-
-7. Navigate to the directory where the code file is saved:
+5. Navigate to the directory where the code file is saved:
 
 ```
 cd src/python
 ```
-8. Run the script using:
+6. Run the script using:
 
 ```
 python cora-app.py
@@ -96,5 +84,3 @@ Consider using GitHub Copilot Chat in Agent mode to assist with creating files f
 - Agent Builder automatically generates code for agents in multiple programming languages and SDKs, facilitating easy migration from prototype to production.
 - Code files may contain placeholders that need modification before execution, requiring developers to understand and adapt the generated logic for their specific needs.
 - Using GitHub Copilot Chat in Ask and Agent modes helps developers understand generated code and create additional components like UI elements for complete agent applications.
-
-Click **Next** to proceed to the following section of the lab.

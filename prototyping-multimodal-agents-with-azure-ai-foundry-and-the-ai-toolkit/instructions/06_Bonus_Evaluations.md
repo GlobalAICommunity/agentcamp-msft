@@ -43,8 +43,7 @@ If no matching products are found in Zava’s catalog, say:​
 ```
 
 > [!NOTE]
-> Make sure the Model is still set to **gpt-5-mini (via Azure AI Foundry)**.
-
+> Make sure the Model is still set to **gpt-4-mini (via Azure AI Foundry)**.
 
 All variables are stored in the **Variables** section in Agent Builder.
 

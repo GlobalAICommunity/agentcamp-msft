@@ -21,4 +21,4 @@ As you move forward in your development journey with AI agents, and consider dep
 
 ## Try this at home
 
-This lab is available for you to revisit at your own pace. You can find the complete lab instructions and resources in the official [GitHub repository](https://github.com/microsoft/ignite25-LAB512-prototyping-multimodal-agents-with-azure-ai-foundry-and-the-ai-toolkit).
+This lab is available for you to revisit at your own pace. You can find the complete lab instructions and resources in the official [GitHub repository](https://github.com/GlobalAICommunity/agentcamp-msft).

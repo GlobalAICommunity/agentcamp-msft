@@ -105,7 +105,7 @@ If any extension is missing, install before moving forward.
 **Deploy Azure Resources to your Azure subscription**
 
 To execute this session demos you will need to create a Microsoft Foundry project with the **gpt-4.1-mini** model deployed.
-You can use the following button to deploy the required resources:[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FGlobalAICommunity%2Fagentcamp-msft%2Frefs%2Fheads%2Fmain%2Fbuild_and_launch_AI_agents_fast_with_Microsoft_Foundry_and_the_AI_Toolkit%2Finfra%2Farm_template.json).
+You can use the following button to deploy the required resources:[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FGlobalAICommunity%2Fagentcamp-msft%2Frefs%2Fheads%2Fmain%2Finfra%2Farm_template.json).
 
 > [!IMPORTANT]
 > Microsoft Foundry requires an Azure subscription. A **free trial** provides $200 credit for 30 days. Some features may incur costs after the trial. Check the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate costs.
