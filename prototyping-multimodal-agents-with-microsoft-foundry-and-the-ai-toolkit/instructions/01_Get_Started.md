@@ -34,9 +34,7 @@ In this workshop, we will be using **GitHub Codespaces** to launch a cloud-hoste
 
 3. Click on **Sign in** and enter your GitHub credentials to log in. If you just created your account, use the username and password you set during the sign-up process.
 
-3. Once you are signed in, you'll be redirected to the [GitHub repo](https://github.com/skillable-events/ignite25-LAB512-prototyping-multimodal-agents-with-azure-ai-foundry-and-the-ai-toolkit) hosting the lab code and resources.
-
-4. Next, click on the green **Code** button and select **Create codespace on main** from the **Codespaces** tab.
+4. Next, click on the green **Code** button on the repository main page and select **Create codespace on main** from the **Codespaces** tab.
 
     ![Create Codespace](../../img/create_codespace.png)
 

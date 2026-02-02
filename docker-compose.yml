@@ -1,4 +1,4 @@
-name: ms-ignite-26
+name: agentcamp-26
 
 networks:
   zava-network:
@@ -6,7 +6,7 @@ networks:
 services:
   db:
     image: pgvector/pgvector:pg17
-    container_name: ms-ignite-26-LAB512
+    container_name: agentcamp-26-LAB512
     ports:
       - "15432:5432"
     environment:
@@ -14,7 +14,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: P@ssw0rd!
     volumes:
-      - zava_postgresql_data_ignite:/var/lib/postgresql/data
+      - zava_postgresql_data_agentcamp:/var/lib/postgresql/data
       - ./data:/docker-entrypoint-initdb.d/backups:ro
       - ./scripts/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh:ro
     networks:
@@ -28,5 +28,5 @@ services:
       start_period: 180s
 
 volumes:
-  zava_postgresql_data_ignite:
+  zava_postgresql_data_agentcamp:
     driver: local
