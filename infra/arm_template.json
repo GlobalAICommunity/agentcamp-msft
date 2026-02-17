@@ -19,7 +19,7 @@
   "variables": {
     "accountName": "[concat('aifoundry-', parameters('uniqueSuffix'))]",
     "projectName": "[concat('project-', parameters('uniqueSuffix'))]",
-    "gpt4DeploymentName": "[concat('gpt-4.1-mini-','', parameters('uniqueSuffix'))]"
+    "gpt4DeploymentName": "[concat('gpt-4.1-mini')]"
   },
   "resources": [
     {
@@ -75,7 +75,7 @@
         "model": {
           "format": "OpenAI",
           "name": "gpt-4.1-mini",
-          "version": "2025-07-18"
+          "version": "2025-04-14"
         },
         "versionUpgradeOption": "OnceNewDefaultVersionAvailable",
         "currentCapacity": 150,
